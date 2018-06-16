@@ -1,0 +1,44 @@
+debug: true
+logging:
+  level:
+    cn.edu.fjnu.towide: debug
+spring:  
+  datasource:  
+    driver-class-name: com.mysql.jdbc.Driver  
+    url: jdbc:mysql://47.93.2.65:3306/xiaolian
+#    url: jdbc:mysql://www.towide.cn:3306/yong_hui_logistics_information_platform  
+    username: xiaolian  
+    password: xiaolian
+    initialize: true  
+#    init-db: true  
+
+#  redis:
+#    database: 0
+#    host: www.towide.cn
+#    port: 6379
+#    password: 
+#    pool:
+#      max-active: 8
+#      max-wait: -1
+#      max-idle: 8
+#      min-idle: 0
+#    timeout: 0
+
+
+pagehelper:
+  helper-dialect: mysql
+
+mybatis:
+  configuration: 
+    map-underscore-to-camel-case: true
+server:
+  port: 8080
+#  port: 446
+#  ssl:
+#    key-store: classpath:tomcat.keystore
+#    key-password: 123456
+
+    
+
+
+
